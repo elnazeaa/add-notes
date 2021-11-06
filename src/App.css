@@ -176,22 +176,22 @@ main {
 }
 .alert {
   margin-bottom: 1rem;
-  height: 1.25rem;
+  height: 1.6rem;
   display: grid;
   align-items: center;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   border-radius: 0.25rem;
   letter-spacing: var(--spacing);
   text-transform: capitalize;
 }
 .alert-danger {
-  color: #721c24;
+  color: #496a0f;
   background: #f8d7da;
 }
 .alert-success {
-  color: #155724;
-  background: #d4edda;
+  background: #c2e0e7;
+  color: #496a0f;
 }
 .grocery-form h3 {
   color: var(--clr-primary-1);
@@ -243,6 +243,7 @@ main {
 }
 
 .grocery-item {
+  background-color: #496a0f;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,15 +254,15 @@ main {
   text-transform: capitalize;
 }
 .grocery-item:hover {
-  color: var(--clr-grey-5);
-  background: var(--clr-grey-10);
+  color: #f7eae6;
+  background: #6b863c;
 }
 .grocery-item:hover .title {
-  color: var(--clr-grey-5);
+  color: #f7eae6;
 }
 .title {
   margin-bottom: 0;
-  color: var(--clr-grey-1);
+  color: #f7eae6;
   letter-spacing: 2px;
   transition: var(--transition);
 }

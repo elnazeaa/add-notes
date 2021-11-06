@@ -1,20 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const SearchForm = ({ listName, handleGetInputValue, handleSubmitForm }) => {
+const SearchForm = ({
+  listName,
+  handleGetInputValue,
+  handleSubmitForm,
+  edit,
+}) => {
   return (
-    <Wrapper class="searchContainer" onSubmit={handleSubmitForm}>
-      <p class="searchTitle">Go ahead, Add Your Lists</p>
-      <div class="form-controls">
+    <Wrapper className="searchContainer" onSubmit={handleSubmitForm}>
+      <p className="searchTitle">Go ahead, Add Your Lists</p>
+      <div className="form-controls">
         <input
           type="text"
-          class="searchInput"
+          className="searchInput"
           placeholder="e.g. eggs"
           value={listName}
           onChange={handleGetInputValue}
         />
-        <button type="submit" class="submitBtn">
-          submit
+        <button type="submit" className="submitBtn">
+          {edit ? "Edit" : "Submit"}
         </button>
       </div>
     </Wrapper>
@@ -48,6 +53,7 @@ const Wrapper = styled.form`
     border-radius: 50px 50px 50px 50px;
     font-size: 17px;
     color: #fff;
+    cursor:pointer;
     }
 
     .searchInput{
